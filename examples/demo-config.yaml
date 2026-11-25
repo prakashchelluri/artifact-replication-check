@@ -1,0 +1,16 @@
+# Offline demo: compares two saved JSON inventories. Run from the repo root:
+#   artifact-replication-check -c examples/demo-config.yaml
+source:
+  name: site-a
+  type: generic
+  url: source-inventory.json   # relative to this file
+target:
+  name: site-b
+  type: generic
+  url: target-inventory.json
+compare_digests: true
+repositories:
+  - platform/payments-api
+  - platform/ledger
+  - tools/base-image
+  - platform/notifications

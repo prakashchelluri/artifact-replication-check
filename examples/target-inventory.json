@@ -1,0 +1,19 @@
+{
+  "repositories": {
+    "platform/payments-api": {
+      "v1": "sha256:1b7e0b0a0c2f4e1d9a8c6b5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f",
+      "v2": "sha256:2c8f1c1b1d3f5f2e0b9d7c6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d8e7f6a",
+      "v3": "sha256:3d9a2d2c2e4a6a3f1c0e8d7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2c1d0e9f8a7b",
+      "v4": "sha256:4eab3e3d3f5b7b4a2d1f9e8a7b6c5d4e3f2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c",
+      "v5": "sha256:5fbc4f4e4a6c8c5b3e2a0f9b8c7d6e5f4a3b2c1d0e9f8a7b6c5d4e3f2a1b0c9d"
+    },
+    "platform/ledger": {
+      "1.4.0": "sha256:aa11aa11aa11aa11aa11aa11aa11aa11aa11aa11aa11aa11aa11aa11aa11aa11",
+      "1.4.1": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "tools/base-image": {
+      "2026.10": "sha256:cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33cc33",
+      "2026.11": "sha256:dd44dd44dd44dd44dd44dd44dd44dd44dd44dd44dd44dd44dd44dd44dd44dd44"
+    }
+  }
+}

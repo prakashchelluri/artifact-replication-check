@@ -1,0 +1,27 @@
+# Template for two Docker Registry v2 sites behind one GeoDNS name.
+timeout: 10                      # seconds, applied to every HTTP request and the DNS lookup
+
+source:
+  name: site-a
+  url: https://registry-a.example.com
+  auth:                          # optional; values are read from environment variables
+    username_env: REG_A_USER
+    password_env: REG_A_PASSWORD
+
+target:
+  name: site-b
+  url: https://registry-b.example.com
+  auth:
+    token_env: REG_B_TOKEN       # static bearer token; omit auth for anonymous pulls
+
+compare_digests: true            # HEAD every tag present on both sites
+
+repositories:
+  - platform/payments-api
+  - platform/ledger
+  - tools/base-image
+
+dns:
+  name: registry.example.com     # the name clients actually pull from
+  expect_addresses: [203.0.113.20, 203.0.113.21]   # target site addresses
+  # expect_cname: registry-b.example.com           # or / and the canonical name
